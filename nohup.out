@@ -1,0 +1,941 @@
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/server
+> node server.js
+
+Running on port 50000
+Error: ER_ACCESS_DENIED_ERROR: Access denied for user ''@'localhost' (using password: NO)
+    at Handshake.Sequence._packetToError (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:116:18)
+    at Object.<anonymous> (/home/hcyja1jupiter/server/server.js:134:5)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage: "Access denied for user ''@'localhost' (using password: NO)",
+  sqlState: '28000',
+  fatal: true
+}
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/server
+> node server.js
+
+Running on port 50000
+Connected!
+[
+  RowDataPacket {
+    name: 'hcyja',
+    studentId: 20150707,
+    email: 'hcyja1@nottingham.edu.my',
+    password: 'lol'
+  }
+]
+[
+  RowDataPacket {
+    name: 'hcyja',
+    studentId: 20150707,
+    email: 'hcyja1@nottingham.edu.my',
+    password: 'lol'
+  }
+]
+[Object: null prototype] {
+  name: 'Chicken',
+  studentId: '20000000',
+  email: 'dragaproductions@gmail.com',
+  password: 'Chicken',
+  passwordConfirm: 'Chicken',
+  register: ''
+}
+$2a$08$.IntNzoOTKh1zagYDWmi1e6nYv8JlqdSoIV4FamJBKTixH0bB.xdi
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0
+}
+[
+  RowDataPacket {
+    name: 'Chicken',
+    studentId: 20000000,
+    email: 'dragaproductions@gmail.com',
+    password: '$2a$08$.IntNzoOTKh1zagYDWmi1e6nYv8JlqdSoIV4FamJBKTixH0bB.xdi'
+  }
+]
+(node:30525) UnhandledPromiseRejectionWarning: Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (/home/hcyja1jupiter/server/node_modules/jsonwebtoken/sign.js:107:20)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:38:34)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30525) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:30525) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[
+  RowDataPacket {
+    name: 'Chicken',
+    studentId: 20000000,
+    email: 'dragaproductions@gmail.com',
+    password: '$2a$08$.IntNzoOTKh1zagYDWmi1e6nYv8JlqdSoIV4FamJBKTixH0bB.xdi'
+  }
+]
+(node:30525) UnhandledPromiseRejectionWarning: Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (/home/hcyja1jupiter/server/node_modules/jsonwebtoken/sign.js:107:20)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:38:34)
+(node:30525) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+[]
+(node:30525) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'password' of undefined
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:30:72)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Query.js:149:8)
+    at Query.EofPacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Query.js:133:8)
+    at Protocol._parsePacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+(node:30525) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 3)
+[Object: null prototype] {
+  name: 'Ang Jia Hau',
+  studentId: '20150707',
+  email: 'angjiahau@gmail.com',
+  password: 'lol',
+  passwordConfirm: 'lol',
+  register: ''
+}
+$2a$08$ejp5ykUvY8x5iUk451197OfYYESzE193Z5/.Tb1EO.kx2qHkJ7ML.
+Error: ER_DUP_ENTRY: Duplicate entry '20150707' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:198:25)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:89:13) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '20150707' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: "INSERT INTO users SET `name` = 'Ang Jia Hau', `email` = 'angjiahau@gmail.com', `studentId` = '20150707', `password` = '$2a$08$ejp5ykUvY8x5iUk451197OfYYESzE193Z5/.Tb1EO.kx2qHkJ7ML.'"
+}
+[Object: null prototype] {
+  name: 'Ang Jia Hau',
+  studentId: '20150707',
+  email: 'angjiahau@gmail.com',
+  password: 'lol',
+  passwordConfirm: 'lol',
+  register: ''
+}
+$2a$08$MpgNJofY3LPLL.hF6LrvBOWFsfFcQQwJsiO9P3N5XBXdYW.mvsSny
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0
+}
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$MpgNJofY3LPLL.hF6LrvBOWFsfFcQQwJsiO9P3N5XBXdYW.mvsSny'
+  }
+]
+(node:30525) UnhandledPromiseRejectionWarning: Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (/home/hcyja1jupiter/server/node_modules/jsonwebtoken/sign.js:107:20)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:38:34)
+(node:30525) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 4)
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$MpgNJofY3LPLL.hF6LrvBOWFsfFcQQwJsiO9P3N5XBXdYW.mvsSny'
+  }
+]
+(node:30525) UnhandledPromiseRejectionWarning: Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (/home/hcyja1jupiter/server/node_modules/jsonwebtoken/sign.js:107:20)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:38:34)
+(node:30525) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 5)
+[]
+(node:30525) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'password' of undefined
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:30:72)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Query.js:149:8)
+    at Query.EofPacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Query.js:133:8)
+    at Protocol._parsePacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+(node:30525) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 6)
+[Object: null prototype] {
+  name: 'Ang Jia Hau',
+  studentId: '20150707',
+  email: 'angjiahau@gmail.com',
+  password: 'lol',
+  passwordConfirm: 'lol',
+  register: ''
+}
+$2a$08$1yzFNsvKuqRMdx2heZ1Fdu1Okwz293gMQgvqfL0Ntcy220H512VrS
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0
+}
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$1yzFNsvKuqRMdx2heZ1Fdu1Okwz293gMQgvqfL0Ntcy220H512VrS'
+  }
+]
+(node:30525) UnhandledPromiseRejectionWarning: Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (/home/hcyja1jupiter/server/node_modules/jsonwebtoken/sign.js:107:20)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:38:34)
+(node:30525) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 7)
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$1yzFNsvKuqRMdx2heZ1Fdu1Okwz293gMQgvqfL0Ntcy220H512VrS'
+  }
+]
+(node:30525) UnhandledPromiseRejectionWarning: Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (/home/hcyja1jupiter/server/node_modules/jsonwebtoken/sign.js:107:20)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:38:34)
+(node:30525) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 8)
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$1yzFNsvKuqRMdx2heZ1Fdu1Okwz293gMQgvqfL0Ntcy220H512VrS'
+  }
+]
+(node:30525) UnhandledPromiseRejectionWarning: Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (/home/hcyja1jupiter/server/node_modules/jsonwebtoken/sign.js:107:20)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:38:34)
+(node:30525) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 9)
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/public_html
+> node server.js
+
+Running on port 50000
+Connected!
+[
+  RowDataPacket {
+    name: 'Chicken',
+    studentId: 20000000,
+    email: 'dragaproductions@gmail.com',
+    password: '$2a$08$.IntNzoOTKh1zagYDWmi1e6nYv8JlqdSoIV4FamJBKTixH0bB.xdi'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQ2hpY2tlbiIsImlhdCI6MTYxNTM1ODEzMCwiZXhwIjoxNjE1MzU4MTMwfQ.Mhx9KVDEqQX3cVfFADNIRSoEEn_Z9aE2WzbQs-6e0a0
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$1yzFNsvKuqRMdx2heZ1Fdu1Okwz293gMQgvqfL0Ntcy220H512VrS'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5nIEppYSBIYXUiLCJpYXQiOjE2MTUzNTgxMzgsImV4cCI6MTYxNTM1ODEzOH0.jPHgKg5aHiOgPX11gn2s0Gn_QFecgdivqc6DgsrWox8
+[Object: null prototype] {
+  name: 'blabla',
+  studentId: '1234',
+  email: 'cibai@gmail.com',
+  password: 'lol',
+  passwordConfirm: 'lol',
+  register: ''
+}
+$2a$08$VXXCkw387AlNe2GfAojphud1YN5Xrlgm8Uqmz5mAJK6fbYfu08gPS
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0
+}
+[Object: null prototype] {
+  name: 'Duck',
+  studentId: '20000001',
+  email: 'Dragagaming@gmail.com',
+  password: 'Duck',
+  passwordConfirm: 'Duck',
+  register: ''
+}
+$2a$08$TM2.9EOYXmX3eVaqDK0hZuJsXR8YriQhXHG.zXcgdQZCKL/kqGCE6
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0
+}
+[
+  RowDataPacket {
+    name: 'blabla',
+    studentId: 1234,
+    email: 'cibai@gmail.com',
+    password: '$2a$08$VXXCkw387AlNe2GfAojphud1YN5Xrlgm8Uqmz5mAJK6fbYfu08gPS'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmxhYmxhIiwiaWF0IjoxNjE1MzU4MTc2LCJleHAiOjE2MTUzNTgxNzZ9.nUY01SnP0l3zw6bYr0uLLD3PvpRVjqAlFbmaCyuAOQk
+[
+  RowDataPacket {
+    name: 'Duck',
+    studentId: 20000001,
+    email: 'Dragagaming@gmail.com',
+    password: '$2a$08$TM2.9EOYXmX3eVaqDK0hZuJsXR8YriQhXHG.zXcgdQZCKL/kqGCE6'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRHVjayIsImlhdCI6MTYxNTM1ODE5MiwiZXhwIjoxNjE1MzU4MTkyfQ.3uW-iKld2tayUqgk1GfZ0D8jRN1Td8l8VCzc8KPKRNE
+[]
+(node:7181) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'password' of undefined
+    at Query.<anonymous> (/home/hcyja1jupiter/public_html/controllers/auth.js:30:72)
+    at Query.<anonymous> (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/sequences/Query.js:149:8)
+    at Query.EofPacket (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/sequences/Query.js:133:8)
+    at Protocol._parsePacket (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7181) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:7181) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[Object: null prototype] {
+  name: 'blablablabla',
+  studentId: '7890',
+  email: 'cibai2@gmail.com',
+  password: 'asdf',
+  passwordConfirm: 'asdf',
+  register: ''
+}
+$2a$08$EImWXuFj.YMxuhxFYTpMaOnzGTZZfOvtZcJFaLKMLRxrlJJbX6UVq
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0
+}
+[Object: null prototype] {
+  name: 'blablablabla',
+  studentId: '7890',
+  email: 'cibai2@gmail.com',
+  password: 'asdf',
+  passwordConfirm: 'asdf',
+  register: ''
+}
+[Object: null prototype] {
+  name: 'Ang Jia Hau',
+  studentId: '20150707',
+  email: 'asdf@gmail.com',
+  password: 'lol',
+  passwordConfirm: 'lol',
+  register: ''
+}
+$2a$08$NQq0YvYRYWZ8/1dDQ4h6suGtFceROnJ.3kU3f.mKx5u5shsH2GDxq
+Error: ER_DUP_ENTRY: Duplicate entry '20150707' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:198:25)
+    at Query.<anonymous> (/home/hcyja1jupiter/public_html/controllers/auth.js:89:13) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '20150707' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: "INSERT INTO users SET `name` = 'Ang Jia Hau', `email` = 'asdf@gmail.com', `studentId` = '20150707', `password` = '$2a$08$NQq0YvYRYWZ8/1dDQ4h6suGtFceROnJ.3kU3f.mKx5u5shsH2GDxq'"
+}
+[Object: null prototype] {
+  name: 'blablablabla',
+  studentId: '7890',
+  email: 'cibai2@gmail.com',
+  password: 'asdf',
+  passwordConfirm: 'asdf',
+  register: ''
+}
+[Object: null prototype] {
+  name: 'angjiahau',
+  studentId: '12345',
+  email: 'asoidjfioadsj@gmail.com',
+  password: 'lol',
+  passwordConfirm: 'lol',
+  register: ''
+}
+$2a$08$nTGOw/KxNATaVozju29Tuud0.laJpqrTqxI6y9D5TQGvXU2HTtPse
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0
+}
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/public_html
+> node server.js
+
+Running on port 50000
+Connected!
+[Object: null prototype] {
+  name: 'asdf',
+  studentId: '20150707',
+  email: 'asdoifaosdijf@gmail.com',
+  password: 'lol',
+  passwordConfirm: 'lol',
+  register: ''
+}
+$2a$08$vWKS7wlbBtoBRg7qqHiH0u3EgC.ppaDF/AEeFAszFKOXtmWaz.IF6
+Error: ER_DUP_ENTRY: Duplicate entry '20150707' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:198:25)
+    at Query.<anonymous> (/home/hcyja1jupiter/public_html/controllers/auth.js:89:13) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '20150707' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: "INSERT INTO users SET `name` = 'asdf', `email` = 'asdoifaosdijf@gmail.com', `studentId` = '20150707', `password` = '$2a$08$vWKS7wlbBtoBRg7qqHiH0u3EgC.ppaDF/AEeFAszFKOXtmWaz.IF6'"
+}
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/public_html
+> node server.js
+
+Running on port 50000
+Connected!
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$vecgA7k8hAOPgrHJ03QaRewGB0Mkp9PS0Hz3a3DIxNRB4uinfSSlO'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5nIEppYSBIYXUiLCJpYXQiOjE2MTU0NzcwMDEsImV4cCI6MTYxNTQ3NzAwMX0.aKdFtUeDY5bbh2d88KEfXS7EMAs9NZLqlwSTZ86soYQ
+2
+2
+hi
+Hi, I am here to collect prescription for Mrs Lien Wan
+2
+2
+ok
+Sorry, I didn't get that. Can you rephrase?
+whats up 
+I missed what you said. What was that?
+2
+asdf
+Sorry, could you say that again?
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$vecgA7k8hAOPgrHJ03QaRewGB0Mkp9PS0Hz3a3DIxNRB4uinfSSlO'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5nIEppYSBIYXUiLCJpYXQiOjE2MTU0NzcyMDksImV4cCI6MTYxNTQ3NzIwOX0.wfWMo3P--pjiSGsdrACGEIQZe4SWACAF8mnZ8YpL0FQ
+1
+1
+hi
+Hi! I've handed in a prescription here for my rheumatoid arthritis about 30 minutes ago and I'm back to collect the medicine.
+1
+ok
+I missed what you said. What was that?
+events.js:292
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:94:28)
+    at Socket.<anonymous> (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (events.js:315:20)
+    at Protocol._delegateError (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:94:28)
+    [... lines matching original stack trace ...]
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! pharmabot@1.0.0 start: `node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the pharmabot@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/hcyja1jupiter/.npm/_logs/2021-03-11T23_36_34_263Z-debug.log
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/public_html
+> node server.js
+
+Running on port 50000
+Error: connect ETIMEDOUT
+    at Connection._handleConnectTimeout (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:409:13)
+    at Object.onceWrapper (events.js:421:28)
+    at Socket.emit (events.js:315:20)
+    at Socket._onTimeout (net.js:483:8)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+    --------------------
+    at Protocol._enqueue (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/hcyja1jupiter/public_html/node_modules/mysql/lib/Connection.js:116:18)
+    at Object.<anonymous> (/home/hcyja1jupiter/public_html/server.js:129:5)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[
+  RowDataPacket {
+    name: 'Chicken',
+    studentId: 20000000,
+    email: 'dragaproductions@gmail.com',
+    password: '$2a$08$.IntNzoOTKh1zagYDWmi1e6nYv8JlqdSoIV4FamJBKTixH0bB.xdi'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQ2hpY2tlbiIsImlhdCI6MTYxNTY0NTI5MCwiZXhwIjoxNjE1NjQ1MjkwfQ.ZAb8RiMdGOO0M9Z6iwLuLZr6Guu1I6vGgvWip1WBJns
+3
+3
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/public_html
+> node server.js
+
+Running on port 50000
+Connected!
+[
+  RowDataPacket {
+    name: 'Chicken',
+    studentId: 20000000,
+    email: 'dragaproductions@gmail.com',
+    password: '$2a$08$.IntNzoOTKh1zagYDWmi1e6nYv8JlqdSoIV4FamJBKTixH0bB.xdi'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQ2hpY2tlbiIsImlhdCI6MTYxNTY0NTQwMiwiZXhwIjoxNjE1NjQ1NDAyfQ.O1Ns84Sel8gDakiRalNh5lvqo3D3m7Fzlyo4FQoQBmA
+3
+3
+hi
+Hello! I need some help regarding travel sickness, my partner suffers from it but has offered to drive as it prevents the symptoms while driving. But the trip might be ruined because of the children being sick in the car.
+3
+what is your name?
+My name is David, I have a wife named Davina and two kids, George & Isabel.
+3
+What is your name?
+My name is David, I have a wife named Davina and two kids, George & Isabel.
+3
+What is your name?
+My name is Davina, I have a husband named David and two kids, George & Isabel.
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/server
+> node server.js
+
+Running on port 50000
+Connected!
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$vecgA7k8hAOPgrHJ03QaRewGB0Mkp9PS0Hz3a3DIxNRB4uinfSSlO'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5nIEppYSBIYXUiLCJzdHVkZW50SWQiOjIwMTUwNzA3LCJpYXQiOjE2MTYwNjI2NjUsImV4cCI6MTYxNjA2MjY2NX0.AZQeTaw3oHT5K1Jam-E035T00EnDKHtqOzjHzBdIXG8
+2
+2
+{ studentId: 20150707, sessionId: 1616062665 }
+Hi
+Hi, I am here to collect prescription for Mrs Lien Wan
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$vecgA7k8hAOPgrHJ03QaRewGB0Mkp9PS0Hz3a3DIxNRB4uinfSSlO'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5nIEppYSBIYXUiLCJzdHVkZW50SWQiOjIwMTUwNzA3LCJpYXQiOjE2MTYwNjI3NDYsImV4cCI6MTYxNjA2Mjc0Nn0.EBh_uFekY8QS0v9qcA2ojiKDVh1k9twMk3KloFfGcSU
+2
+2
+{ studentId: 20150707, sessionId: 1616062746 }
+Hi
+Hi, I am here to collect prescription for Mrs Lien Wan
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/server
+> node server.js
+
+events.js:292
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::50000
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at Function.listen (/home/hcyja1jupiter/server/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/hcyja1jupiter/server/server.js:153:5)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1345:8)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 50000
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! pharmabot@1.0.0 start: `node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the pharmabot@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/hcyja1jupiter/.npm/_logs/2021-03-18T10_20_51_945Z-debug.log
+[
+  RowDataPacket {
+    name: 'Ang Jia Hau',
+    studentId: 20150707,
+    email: 'angjiahau@gmail.com',
+    password: '$2a$08$vecgA7k8hAOPgrHJ03QaRewGB0Mkp9PS0Hz3a3DIxNRB4uinfSSlO'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5nIEppYSBIYXUiLCJzdHVkZW50SWQiOjIwMTUwNzA3LCJpYXQiOjE2MTYwNjI4NjYsImV4cCI6MTYxNjA2Mjg2Nn0.Z-_vdRXbFjypaWnHgNttaD5KvyWq3SUfe0ST3JE_DYU
+1
+1
+{ studentId: 20150707, sessionId: 1616062866 }
+hi
+Hi! I've handed in a prescription here for my rheumatoid arthritis about 30 minutes ago and I'm back to collect the medicine.
+1
+{ studentId: 20150707, sessionId: 1616062866 }
+lkjlkj
+Sorry, could you say that again?
+1
+{ studentId: 20150707, sessionId: 1616062866 }
+1
+{ studentId: 20150707, sessionId: 1616062866 }
+hi
+Hi! I've handed in a prescription here for my rheumatoid arthritis about 30 minutes ago and I'm back to collect the medicine.
+hi
+Hi! I've handed in a prescription here for my rheumatoid arthritis about 30 minutes ago and I'm back to collect the medicine.
+events.js:292
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:94:28)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (events.js:315:20)
+    at Protocol._delegateError (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:94:28)
+    [... lines matching original stack trace ...]
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! pharmabot@1.0.0 start: `node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the pharmabot@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/hcyja1jupiter/.npm/_logs/2021-03-18T18_17_16_625Z-debug.log
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/server
+> node server.js
+
+Running on port 50000
+Error: connect ETIMEDOUT
+    at Connection._handleConnectTimeout (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:409:13)
+    at Object.onceWrapper (events.js:421:28)
+    at Socket.emit (events.js:315:20)
+    at Socket._onTimeout (net.js:483:8)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+    --------------------
+    at Protocol._enqueue (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:116:18)
+    at Object.<anonymous> (/home/hcyja1jupiter/server/server.js:145:5)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+undefined
+undefined
+
+> pharmabot@1.0.0 start /home/hcyja1jupiter/server
+> node server.js
+
+Running on port 50000
+Connected!
+[
+  RowDataPacket {
+    name: 'Chicken',
+    studentId: 20000000,
+    email: 'dragaproductions@gmail.com',
+    password: '$2a$08$.IntNzoOTKh1zagYDWmi1e6nYv8JlqdSoIV4FamJBKTixH0bB.xdi'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQ2hpY2tlbiIsInN0dWRlbnRJZCI6MjAwMDAwMDAsImlhdCI6MTYxNzY0NTUxMiwiZXhwIjoxNjE3NjQ1NTEyfQ.SNY4XDMjLLjFH4SZ1PSJf_hXfdE_EzxatS14gq5y6Wg
+1
+1
+hi
+Hi! I've handed in a prescription here for my rheumatoid arthritis about 30 minutes ago and I'm back to collect the medicine.
+1
+what is your name
+My name is Alex Jones and I am 57 years old.
+1
+what is your address
+It is 22 Black Road, Hyson Green, Nottingham, NG3 2TY.
+1
+do you have any allergies
+No, not that I know of.
+1
+have you had any previous medication
+I've been on naproxen tablets prescribed by my GP previously, but my condition hasn't been getting any better. I'm already a bit tired with the whole process.
+1
+Goodbye
+Thank you, goodbye!
+[
+  RowDataPacket {
+    name: 'Chicken',
+    studentId: 20000000,
+    email: 'dragaproductions@gmail.com',
+    password: '$2a$08$.IntNzoOTKh1zagYDWmi1e6nYv8JlqdSoIV4FamJBKTixH0bB.xdi'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQ2hpY2tlbiIsInN0dWRlbnRJZCI6MjAwMDAwMDAsImlhdCI6MTYxNzY0NTc2NCwiZXhwIjoxNjE3NjQ1NzY0fQ._MMxwJxYnBnOCopeI3fqVovMYtevhd7EBJm-HQtddyU
+1
+1
+hi
+Hi! I've handed in a prescription here for my rheumatoid arthritis about 30 minutes ago and I'm back to collect the medicine.
+1
+Goodbye
+Thank you, goodbye!
+[
+  RowDataPacket {
+    name: 'Chicken',
+    studentId: 20000000,
+    email: 'dragaproductions@gmail.com',
+    password: '$2a$08$.IntNzoOTKh1zagYDWmi1e6nYv8JlqdSoIV4FamJBKTixH0bB.xdi'
+  }
+]
+Token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQ2hpY2tlbiIsInN0dWRlbnRJZCI6MjAwMDAwMDAsImlhdCI6MTYxNzY0NjQzNywiZXhwIjoxNjE3NjQ2NDM3fQ.hTtO4pETfEJSM3LnpQxgvUpT4uilwD4VL1Kpl_9D1Fw
+1
+1
+1
+1
+1
+1
+hi
+Hi! I've handed in a prescription here for my rheumatoid arthritis about 30 minutes ago and I'm back to collect the medicine.
+1
+1
+hi
+Hi! I've handed in a prescription here for my rheumatoid arthritis about 30 minutes ago and I'm back to collect the medicine.
+[Object: null prototype] {
+  name: 'Steven Ho Chu Leong',
+  studentId: '20194491',
+  email: 'yoloswagger1314@gmail.com',
+  password: '77357735',
+  passwordConfirm: '77357735',
+  register: ''
+}
+$2a$08$Hi/5hk8yJvHc21Wh6E/9juhCmGwLv42Ubd8zkrIDY3AcepMVWKaxq
+Error: ER_DUP_ENTRY: Duplicate entry '20194491' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:198:25)
+    at Query.<anonymous> (/home/hcyja1jupiter/server/controllers/auth.js:92:13) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '20194491' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: "INSERT INTO users SET `name` = 'Steven Ho Chu Leong', `email` = 'yoloswagger1314@gmail.com', `studentId` = '20194491', `password` = '$2a$08$Hi/5hk8yJvHc21Wh6E/9juhCmGwLv42Ubd8zkrIDY3AcepMVWKaxq'"
+}
+[
+  RowDataPacket {
+    name: 'Steven Ho Chu Leong',
+    studentId: 20194491,
+    email: 'hcysh2@nottingham.edu.my',
+    password: '$2a$08$H1NCG.z8W/f0yqi1eKIr9eBhHncvsFBGAB0NL2iHsH.R5tQ3TISui'
+  }
+]
+[
+  RowDataPacket {
+    name: 'Steven Ho Chu Leong',
+    studentId: 20194491,
+    email: 'hcysh2@nottingham.edu.my',
+    password: '$2a$08$H1NCG.z8W/f0yqi1eKIr9eBhHncvsFBGAB0NL2iHsH.R5tQ3TISui'
+  }
+]
+[
+  RowDataPacket {
+    name: 'Steven Ho Chu Leong',
+    studentId: 20194491,
+    email: 'hcysh2@nottingham.edu.my',
+    password: '$2a$08$H1NCG.z8W/f0yqi1eKIr9eBhHncvsFBGAB0NL2iHsH.R5tQ3TISui'
+  }
+]
+[
+  RowDataPacket {
+    name: 'Steven Ho Chu Leong',
+    studentId: 20194491,
+    email: 'hcysh2@nottingham.edu.my',
+    password: '$2a$08$H1NCG.z8W/f0yqi1eKIr9eBhHncvsFBGAB0NL2iHsH.R5tQ3TISui'
+  }
+]
+events.js:292
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:94:28)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (events.js:315:20)
+    at Protocol._delegateError (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/hcyja1jupiter/server/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/hcyja1jupiter/server/node_modules/mysql/lib/Connection.js:94:28)
+    [... lines matching original stack trace ...]
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! pharmabot@1.0.0 start: `node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the pharmabot@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/hcyja1jupiter/.npm/_logs/2021-04-06T02_15_11_208Z-debug.log

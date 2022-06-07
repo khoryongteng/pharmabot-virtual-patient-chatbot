@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmabot Login Form</title>
+    <link rel="stylesheet"  href="/style.css">
+    </head>
+<body>  
+    <div class="pharmabot-login-form">
+        {{#if message }}
+    <h4 class = "alert alert-danger" role = "alert">{{message}}</h4>
+    {{/if}}
+        
+ {{#if messageSuccess }}
+    <h4 class = "alert alert-success" role = "alert">{{messageSuccess}}</h4>
+    {{/if}}
+        
+        <img src="../img/uniLogo.jpg" alt="uni-logo" class="logo">
+           
+        <div class=form-login>
+
+        <form action="/auth/login" method="POST" class="login-form">
+           
+            
+        <div class="Input-Fields">
+            <label>Student ID :</label>
+            <input type="number" name="studentId" placeholder="Enter Your Student ID">
+        </div>
+        <div class="Input-Fields">
+            <label>Password :</label>
+            <input type="password" name="password" placeholder="Enter Your Password">
+        </div>
+        <div class="Input-Fields">
+            <button type="submit" name="login" class="btn">Login</button>
+        </div>
+                
+        </form>
+        <div class = notyetmember>
+        <p class=nymheading>Not yet a member?</p>
+        <a href ="/register" class="nymlink">Register</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

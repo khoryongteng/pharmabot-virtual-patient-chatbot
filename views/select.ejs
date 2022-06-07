@@ -1,0 +1,39 @@
+<html>
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmabot Select Page</title>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <script>
+        function selectExercise(){
+            var num = document.getElementById('exercise').value
+            if(num != 'Default') {
+                window.location = `counselling-${num}?botnum=${num}`;
+            }
+        }
+    </script>
+    </head>
+<body>  
+<div class = "select-form-big">
+    <div class="pharmabot-select-page">
+    <img src="img/uniLogo.jpg" alt="uni-logo" class="logo">
+    <h1 style="text-align:center;">PHARMABOT</h1>
+    
+	
+    <div class="Input-Fields">    
+    <h4> Select Exercise</h4>
+    
+    <select name="exercise" id="exercise" style="font-size: 19px;">
+    <option value="Default">Choose a counselling</option>
+    <option value="1">Exercise 1 - Presciption Collection (methotrexate and folic acid)</option>
+    <option value="2">Exercise 2 - Presciption Collection (glycerol suppositories)</option>
+    <option value="3">Exercise 3 - Travel Sickness Enquiry</option>
+        </select>
+    <div class="Input-Fields">
+            <button type="submit" name="Submit" class="btn" onclick="selectExercise()">Submit</button>
+    </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

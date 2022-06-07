@@ -1,0 +1,41 @@
+{
+  "name": "pharmabot",
+  "version": "1.0.0",
+  "description": "SEGP 8A ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "8A",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/dialogflow": "^3.3.0",
+    "@google-cloud/dialogflow-cx": "^2.2.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "deep-email-validator": "^0.1.18",
+    "dialogflow": "^1.2.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "email-existence": "^0.1.6",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.10.0",
+    "hbs": "^4.1.1",
+    "jsdom": "^15.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mssql": "^6.3.1",
+    "mysql": "^2.18.1",
+    "mysql-ssh": "^1.0.6",
+    "mysql2": "^2.2.5",
+    "node-php": "0.0.1",
+    "req-flash": "^0.0.3",
+    "ssh2": "^0.8.9",
+    "uuid": "^8.3.2"
+  }
+}

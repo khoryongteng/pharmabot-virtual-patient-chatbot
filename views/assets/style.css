@@ -1,0 +1,193 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+    
+.alert:before{
+    font-family: "Font Awesome 5 Free";
+   content: "\f071";
+    margin-right:10px;
+    font-size:25px;
+}
+
+
+html{
+    font-family: 'Raleway';
+}
+h1{
+    font-size:40px;
+    font-weight:700;
+}
+body{
+    margin:0;
+    padding:0;
+    background-image: url("/img/CampusBackground.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pharmabot-register-form{
+    width:700px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding:20px;
+    margin: 1% auto 0;
+    text-align:center;
+    margin-bottom: 100px;
+    font-size: 19px;
+    border-radius:15px;
+}
+form {
+    width: 50%;
+    padding:20px;
+    margin: 0px auto;
+      border-radius:25px;
+}
+
+
+.Input-Fields {
+    margin: 10px -10px 10px -10px;
+    margin-top: 40px !important;
+    font-weight:700;
+}
+
+.Input-Fields label{
+    margin: 7px;
+    margin-top:10px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Input-Fields input{
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 17px;
+    border: 1px solid rgba(80, 74, 74, 0.842);
+    border-radius: 5px;
+}
+.notyetmember{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.nymlink{
+     margin-left:15px;
+}
+.nymlink:hover{
+    transform:scale(1.1);
+    transition:0.3s;
+}
+.btn{
+    padding: 10px;
+    padding-left:100px;
+    padding-right:100px;
+    font-size: 15px;
+    color: white;
+    background: #6f96c9;
+    border:none;
+    border-radius: 5px;
+}
+.btn:hover{
+    transform:scale(1.1);
+    transition:0.3s;
+}
+.logo{
+    max-width:400px;
+   margin-left:-25px;
+    height: auto;
+    margin-bottom:35px;
+    margin-top:10px;
+    
+}
+
+.error {
+    width: auto;
+    margin: 0px auto;
+    padding: auto;
+    border: 0.5px solid #da1717;
+    color: #da1717;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.pharmabot-login-form{
+     position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+    width:700px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+   background-color: rgba(255, 255, 255, 0.9); 
+    padding:20px;
+    text-align:center;
+    font-size: 19px;
+    border-radius:15px;
+}
+
+.pharmabot-select-page{
+    width:700px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding:20px;
+    margin: 8% auto 0;
+    text-align:center;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+
+/*--------------------
+Mobile Responsiveness
+--------------------*/
+
+@media only screen and (max-width: 815px) {
+ .pharmabot-select-page {
+  width:auto;
+  }
+  .form-login{
+	margin-top:-5vh;
+	
+  }
+ .pharmabot-login-form,.pharmabot-select-page{
+	  width:85vw;
+	  height:auto;
+	  
+}
+
+.pharmabot-register-form{
+	width:86vw;
+	height:auto;
+	margin-top:10vh;
+}
+.logo-registration{
+	width:140%;
+	
+}
+
+form{
+display:flex-box;
+	width:80%;
+}
+.logo{
+	position:relative;
+	width:80%;
+	margin-top:5vh;
+}
+select{
+	display:flex-box;
+	width:80%;
+}
+
+.select-form-big{
+	margin-top:15vh;
+
+}
+.pharmabot-select-page{
+	border-radius:15px;
+}
+}
